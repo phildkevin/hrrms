@@ -37,6 +37,31 @@
   color: red !important;
 }
 
+.t-white{
+  color: #fff !important;
+}
+
+.thmBg{
+  background-color: #F3A530 !important;
+}
+
+.card{
+  box-shadow: #999 2px 2px 5px;
+}
+
+.card, .card-header, .card-body, .card-footer{
+  border-radius: 0px;
+}
+
+.card-header:first-child {
+  border-radius: 0px;
+}
+
+.tab-content{
+  margin-top: 15px;
+}
+
+
 /*===================================================
 |                      LOGIN                        |
 ===================================================*/
