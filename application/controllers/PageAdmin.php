@@ -2,9 +2,9 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard Extends CI_Controller{
+class PageAdmin Extends CI_Controller{
 
-		public function view($page = 'dashboard'){
+		public function view($page){
 
 
 			if (!file_exists(APPPATH.'views/admin/'.$page.'.php')) {
@@ -18,7 +18,7 @@ class Dashboard Extends CI_Controller{
 						$data['page']  = $page;
 
 						$this->load->view('templates/header-admin');
-			      $this->load->view('admin/dashboard',$data);
+			      $this->load->view('admin/'.$page,$data);
 			      $this->load->view('templates/footer-admin');
 
 					}

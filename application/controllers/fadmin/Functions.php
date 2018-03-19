@@ -48,7 +48,16 @@
           }else{
               $data    = $this->flib->sanitizer([$username, $password]);
               $res     = $this->fmodel->login($data);
+              $row     = $res->row_array();
               if ($res->num_rows() > 0) {
+                $session_data = array(
+      							'username' 	=> $username,
+                    'name'      => $row['fname'],
+      							'access' 	  => $row['access']
+      						);
+
+                $this->session->set_userdata('user', $session_data);
+
                 echo json_encode(array('code' => 2));
               }else{
                 echo json_encode(array('code' => 1, 'reply' => 'Incorrect username or password'));

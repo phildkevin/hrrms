@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['fadmin/(:any)']     = 'fadmin/functions/$1';
 $route['admin'] = 'admin/view';
-$route['admin/dashboard'] = 'dashboard/view';
+$route['admin/(:any)'] = 'pageadmin/view/$1';
 
 $route['default_controller'] = 'pages/view';
 $route['404_override'] = '';
