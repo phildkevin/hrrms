@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="card">
   <div class="card-header thmBg t-white">
     <i class="fa fa-cogs"></i> Setup
@@ -29,3 +30,6 @@
 
   </div>
 </div>
+=======
+
+>>>>>>> 98c2c6e73d2e85014441564b823a97ad06334386
