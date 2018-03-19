@@ -31,14 +31,17 @@
             <form id="loginform">
               <div class="form-group">
                 <label>Username</label>
-                <input type="text" class="form-control" name="Username" required>
+                <input type="text" class="form-control" name="username" required>
               </div>
               <div class="form-group">
                 <label>Password</label>
                 <input type="password" class="form-control" name="password" required>
               </div>
-              <div align="right">
-                <button type="submit" class="btn btn-success thmBtn-light">Login</button>
+              <div>
+                <div class="error-div">
+
+                </div>
+                <button type="submit" class="btn btn-success thmBtn-light float-right">Login</button>
               </div>
             </form>
           </div>
@@ -51,7 +54,25 @@
     <script type="text/javascript">
           $(document).on('submit', '#loginform', function(e) {
             e.preventDefault();
-            alert('asd');
+            var data = $(this).serialize();
+            $.ajax({
+
+              type     : "POST",
+              url      : $('#base_url').val() + "fadmin/login",
+              dataType : "JSON",
+              data     : data,
+
+              success  : function(data) {
+                if (data.code == 1) {
+                  $('.error-div').html(data.reply);
+                }else if(data.code == 2){
+                  window.location.href = "admin/dashboard";
+                }
+              }
+
+
+            })
+
           })
     </script>
 

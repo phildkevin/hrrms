@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+
+$route['fadmin/(:any)']     = 'fadmin/functions/$1';
 $route['admin'] = 'admin/view';
 $route['admin/dashboard'] = 'dashboard/view';
 
