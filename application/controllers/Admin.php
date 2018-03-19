@@ -6,7 +6,12 @@ class Admin Extends CI_Controller{
 
 public function view(){
 
-			$this->load->view('admin/login');
+
+			if (isset($this->session->userdata['user'])) {
+          redirect(base_url('admin/dashboard'));
+      }else{
+        $this->load->view('admin/login');
+      }
 
 		}
 
