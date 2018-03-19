@@ -1,0 +1,61 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
+@media(max-width:1091px) {
+  .admin-login{
+    background-size: cover !important;
+    height: 700px !important;
+  }
+
+  .admin-content{
+    width: 100% !important;
+  }
+}
+
+/*===================================================
+|                     GENERAL                       |
+===================================================*/
+
+.thmBtn-light{
+  border-radius: 0px;
+  box-shadow: #444 1px 1px 4px;
+}
+
+.thmBtn-light{
+
+}
+
+.t-red{
+  color: red !important;
+}
+
+/*===================================================
+|                      LOGIN                        |
+===================================================*/
+
+.admin-login{
+  background: url(../images/back.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  font: 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+  min-height: 700px;
+}
+
+.admin-content{
+  background-color: #fff;
+  height: 700px;
+  padding: 50px;
+  padding-top: 120px;
+}
+
+.admin-login-title{
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 600;
+}

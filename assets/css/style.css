@@ -1,0 +1,99 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
+
+@media (max-width: 1060px){
+
+  body{
+    background-size: cover !important;
+  }
+
+}
+
+@media (max-width: 767px){
+
+  body{
+    background-size: cover !important;
+  }
+
+}
+
+body{
+  background: url(../images/back.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 130px;
+  height: auto;
+  font: 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+/*===================================================
+|                      ADMIN                         |
+===================================================*/
+
+.admin-login{
+  background-color: #fff;
+}
+
+
+/*===================================================
+|                      GENERAL                      |
+===================================================*/
+
+.t-red{
+  color: #ff0000 !important
+}
+
+.t-white{
+  color: #fff !important
+}
+
+
+ /*===================================================
+|                      HEADER                        |
+===================================================*/
+
+.area-header .navbar{
+
+}
+
+.area-header .navbar .navbar-brand{
+  color: #fff;
+  text-shadow: #000 -2px 2px 3px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    letter-spacing: 1px;
+    transition:0.5s all ease;
+}
+
+.area-header .navbar .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover,
+.area-header .navbar .navbar-brand:focus, .navbar-light .navbar-nav .nav-link:focus{
+  color: #F3A530;
+
+}
+
+/*====================================================
+|                       FOOTER                       |
+===================================================*/
+
+.area-footer{
+  position: fixed;
+  z-index: 999;
+  bottom:0;
+  width: 100%;
+  height: auto;
+}
+
+.area-footer .footer-content{
+  padding: 10px;
+  background: rgba(13, 13, 13, 0.6);
+  color: #fff;
+}
