@@ -15,9 +15,23 @@ class PageAdmin Extends CI_Controller{
 						redirect(base_url());
 					}else{
 						$data['title'] = ucfirst($page);
-						$data['page']  = $page;
 
-						$this->load->view('templates/header-admin');
+						switch ($page) {
+							case 'dashboard':
+								$data['icon'] = "fa fa-fw fa-dashboard";
+								break;
+							case 'setup':
+								$data['icon'] = "fa fa-fw fa-cogs";
+								break;
+							case 'reservation':
+								$data['icon'] = "fa fa-fw fa-calendar-check-o";
+								break;
+							case 'building':
+								$data['icon'] = "fa fa-fw fa-building";
+								break;
+						}
+
+						$this->load->view('templates/header-admin',$data);
 			      $this->load->view('admin/'.$page,$data);
 			      $this->load->view('templates/footer-admin');
 
