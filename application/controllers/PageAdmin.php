@@ -26,8 +26,8 @@ class PageAdmin Extends CI_Controller{
 							case 'reservation':
 								$data['icon'] = "fa fa-fw fa-calendar-check-o";
 								break;
-							case 'building':
-								$data['icon'] = "fa fa-fw fa-building";
+							case 'rooms':
+								$data['icon'] = "fa fa-fw fa-bed";
 								break;
 						}
 

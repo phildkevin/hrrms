@@ -39,10 +39,10 @@
               <span class="nav-link-text">Reservations</span>
             </a>
           </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Building">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-building"></i>
-              <span class="nav-link-text">Building</span>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Rooms">
+            <a class="nav-link" href="<?=base_url()?>admin/rooms">
+              <i class="fa fa-fw fa-bed"></i>
+              <span class="nav-link-text">Rooms</span>
             </a>
           </li>
         </ul>

@@ -5,11 +5,14 @@
       <title>Hotel Restaurent Resort Management System</title>
   </head>
     <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/fa/css/font-awesome.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/datatables/datatables.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/vendor/fa/css/font-awesome.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/vendor/datatables/datatables.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/vendor/hover/css/hover-min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/vendor/datepicker/css/bootstrap-datepicker3.min.css') ?>">
 
   <script type="text/javascript" src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
+  <script type="text/javascript" src="<?= base_url('assets/vendor/datepicker/js/bootstrap-datepicker.min.js')?>"></script>
 
   <body>
 
@@ -26,13 +29,13 @@
     <div class="collapse navbar-collapse" id="myNav">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link hvr-underline-from-left" href="#"><i class="fa fa-home"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-info-circle"></i> About</a>
+          <a class="nav-link hvr-underline-from-left" href="#"><i class="fa fa-info-circle"></i> About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-phone"></i> Contact</a>
+          <a class="nav-link hvr-underline-from-left" href="#"><i class="fa fa-phone"></i> Contact</a>
         </li>
       </ul>
     </div>
