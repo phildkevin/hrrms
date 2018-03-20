@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
       <title><?= $title; ?></title>
-  </head>
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/fa/css/font-awesome.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/datatables/datatables.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/sb-admin.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/admin.css') ?>">
+      <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>">
+      <link rel="stylesheet" href="<?= base_url('assets/vendor/fa/css/font-awesome.min.css') ?>">
+      <link rel="stylesheet" href="<?= base_url('assets/css/sb-admin.css') ?>">
+      <link rel="stylesheet" href="<?= base_url('assets/css/admin.css') ?>">
 
-  <script type="text/javascript" src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
+      <link rel="stylesheet" href="<?= base_url('assets/datatables/datatables.min.css') ?>">
+
+      <script type="text/javascript" src="<?= base_url('assets/js/sweetalert.min.js') ?>"></script>
+      <script type="text/javascript" src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
+      <script type="text/javascript" src="<?= base_url('assets/js/site/admin/core.js') ?>"></script>
+      <script type="text/javascript" src="<?= base_url('assets/datatables/datatables.min.js') ?>"></script>
+      <script type="text/javascript" href="<?= base_url('assets/datatables/dataTables.bootstrap4.min.js') ?>"></script>
+      <input type="hidden" id="base_url" value="<?= base_url() ?>">
+      <script type="text/javascript">
+        var base_url = $("#base_url").val();
+      </script>
+
+  </head>
+
 
   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 
