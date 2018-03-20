@@ -58,7 +58,7 @@
             $.ajax({
 
               type     : "POST",
-              url      : $('#base_url').val() + "fadmin/login",
+              url      : $('#base_url').val() + "fadmin/functions/login",
               dataType : "JSON",
               data     : data,
 

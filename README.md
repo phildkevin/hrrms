@@ -1,6 +1,5 @@
-## Requirements
-* Latest CI Framework
-* Web Server
-* Database Sever
-* you can use XAMPP, WAMPP, LAMP, etc....
+# ITPM PROJECT : Sun on the beach v2.
+## Team Legacy
+* A group project of team legacy
+	* 
 ------
